@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_assignment/screens/home_page.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -11,7 +12,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
 
   bool _passwordVisible = true;
 
-  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
 
   late final AnimationController _animationController = AnimationController(
     vsync: this,
@@ -103,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                                 ),
                                 child: TextField(
                                   style: const TextStyle(color: Colors.white),
-                                  controller: _nameController,
+                                  controller: nameController,
                                   decoration: const InputDecoration(
                                     prefixIcon: Icon(
                                       Icons.email,
@@ -179,12 +180,12 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                                 backgroundColor: Colors.white.withOpacity(0.8),
                                 child: const Icon(Icons.arrow_forward, size: 24, color: Colors.black,),
                                 onPressed: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //     builder: (context) => ,
-                                  //   ),
-                                  // );
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomeScreen(),
+                                    ),
+                                  );
                                 },
                               ),
                             )

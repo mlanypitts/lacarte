@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:restaurant_assignment/screens/login_page.dart';
 
 void main() {
@@ -11,8 +12,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const GetMaterialApp(
       title: 'Restaurant App',
+      locale: Locale('fr', 'FR'),
+      translationsKeys: {
+        'fr_FR': {'title':"Bonjour !",
+                  'title_one': "Où voulez-vous manger \n aujourd'hui ?"},
+        'en_US': {'title': "Hello !",
+                  'title_one': "Where do you want to eat \n today ?"}
+      },
       home: LoginScreen(),
     );
   }
