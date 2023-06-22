@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       locale: Locale('fr', 'FR'),
       translationsKeys: {
         'fr_FR': {'title':"Bonjour !",
-                  'title_one': "Où voulez-vous manger \n aujourd'hui ?"},
+                  'title_one': "Où voulez-vous jiji \n aujourd'hui ?"},
         'en_US': {'title': "Hello !",
                   'title_one': "Where do you want to eat \n today ?"}
       },
