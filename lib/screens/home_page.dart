@@ -14,6 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final TextEditingController searchController = TextEditingController();
 
+  bool _searchVisible = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,16 +97,76 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 46, top: 220),
-                      child: SizedBox(
-                        height: 70,
-                        width: 70,
-                        child: FloatingActionButton(
-                          backgroundColor: Colors.redAccent,
-                          child: const Icon(Icons.search, size: 32, color: Colors.white,),
-                          onPressed: () {
-
-                          },
-                        ),
+                      child: Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Visibility(
+                                visible: true,
+                                child: SizedBox(
+                                  height: 70,
+                                  width: 70,
+                                  child: FloatingActionButton(
+                                    backgroundColor: Colors.redAccent,
+                                    child: const Icon(Icons.search, size: 32, color: Colors.white,),
+                                    onPressed: () {
+                                      setState(() {
+                                        _searchVisible = true;
+                                      });
+                                    },
+                                  ),
+                                ),
+                              ),
+                              Visibility(
+                                visible: _searchVisible,
+                                child: Container(
+                                  width: 306,
+                                  height: 70,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(40),
+                                    color: Colors.redAccent,
+                                  ),
+                                  child: TextField(
+                                    style: const TextStyle(color: Colors.white, fontSize: 22),
+                                    controller: searchController,
+                                    decoration: InputDecoration(
+                                      prefixIcon: const Padding(
+                                        padding: EdgeInsets.only(left: 20, right: 10),
+                                        child: Icon(
+                                          Icons.search,
+                                          color: Colors.white,
+                                          size: 32,
+                                        ),
+                                      ),
+                                      suffixIcon: GestureDetector(
+                                        onTap: () {
+                                          setState(() {
+                                            _searchVisible = false;
+                                          });
+                                        },
+                                        child: const Padding(
+                                          padding: EdgeInsets.symmetric(horizontal: 20),
+                                          child: Icon(
+                                            Icons.clear,
+                                            color: Colors.white,
+                                            size: 28,
+                                          ),
+                                        ),
+                                      ),
+                                      hintText: 'Search...',
+                                      hintStyle: const TextStyle(color: Colors.white, fontSize: 22),
+                                      contentPadding: const EdgeInsets.all(22),
+                                      border: InputBorder.none,
+                                    ),
+                                    onChanged: (value) {
+                                      // Do something
+                                    },
+                                  ),
+                                ),
+                              ),
+                            ]
+                          ),
+                        ],
                       ),
                     ),
                   ],

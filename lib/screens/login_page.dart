@@ -145,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                                       size: 22,
                                     ),
                                     suffixIcon: GestureDetector(
-                                      onTap: (){
+                                      onTap: () {
                                         setState(() {
                                           if(_passwordVisible){
                                             _passwordVisible = false;
