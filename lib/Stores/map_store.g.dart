@@ -56,22 +56,6 @@ mixin _$MapStore on _MapStore, Store {
     });
   }
 
-  late final _$controllerAtom =
-      Atom(name: '_MapStore.controller', context: context);
-
-  @override
-  Completer<GoogleMapController> get controller {
-    _$controllerAtom.reportRead();
-    return super.controller;
-  }
-
-  @override
-  set controller(Completer<GoogleMapController> value) {
-    _$controllerAtom.reportWrite(value, super.controller, () {
-      super.controller = value;
-    });
-  }
-
   late final _$initialPositionAtom =
       Atom(name: '_MapStore.initialPosition', context: context);
 
@@ -88,18 +72,22 @@ mixin _$MapStore on _MapStore, Store {
     });
   }
 
-  late final _$_MapStoreActionController =
-      ActionController(name: '_MapStore', context: context);
+  late final _$checkLocationPermissionAsyncAction =
+      AsyncAction('_MapStore.checkLocationPermission', context: context);
 
   @override
-  void setSearchStatus(bool x) {
-    final _$actionInfo = _$_MapStoreActionController.startAction(
-        name: '_MapStore.setSearchStatus');
-    try {
-      return super.setSearchStatus(x);
-    } finally {
-      _$_MapStoreActionController.endAction(_$actionInfo);
-    }
+  Future<void> checkLocationPermission() {
+    return _$checkLocationPermissionAsyncAction
+        .run(() => super.checkLocationPermission());
+  }
+
+  late final _$getCurrentLocationAsyncAction =
+      AsyncAction('_MapStore.getCurrentLocation', context: context);
+
+  @override
+  Future<void> getCurrentLocation() {
+    return _$getCurrentLocationAsyncAction
+        .run(() => super.getCurrentLocation());
   }
 
   @override
@@ -108,7 +96,6 @@ mixin _$MapStore on _MapStore, Store {
 markers: ${markers},
 myCurrentPosition: ${myCurrentPosition},
 searchVisible: ${searchVisible},
-controller: ${controller},
 initialPosition: ${initialPosition}
     ''';
   }
