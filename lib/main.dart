@@ -1,9 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get_it/get_it.dart';
+import 'package:restaurant_assignment/Stores/menu_store.dart';
+import 'package:restaurant_assignment/repositories/menu_repository.dart';
 import 'package:restaurant_assignment/screens/login_page.dart';
 
 void main() {
   runApp(const MyApp());
+  GetIt getIt = GetIt.instance;
+
+  getIt.registerSingletonAsync<MenuRepository>(() async {
+  final repo = MenuRepository();
+  return repo;
+  });
+
+  getIt.registerSingletonAsync<MenuStore>(() async {
+    final store = MenuStore();
+    return store;
+  } ,dependsOn:[MenuRepository]);
+
 }
 
 class MyApp extends StatelessWidget {

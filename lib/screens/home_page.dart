@@ -8,6 +8,7 @@ import 'package:restaurant_assignment/Stores/map_store.dart';
 import 'package:widget_to_marker/widget_to_marker.dart';
 import '../widgets/currentLocation_widget.dart';
 import '../widgets/customMarker_widget.dart';
+import 'menu_page.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -66,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
         icon: await const MarkerWidgetCurrentLocation().toBitmapDescriptor(
             logicalSize: const Size(250, 250),
             imageSize: const Size(250, 250)
-        ),
+        ),onTap:  _onMarkerTapped
       ),
       Marker(
         markerId: const MarkerId("2"),
@@ -86,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       Marker(
         markerId: const MarkerId("4"),
-        position: const LatLng(-20.226810783215416, 57.467999938390335),
+        position: const LatLng(-20.163161470751238, 57.497918288734304),
         icon: await const MarkerWidget(name: "La Carte").toBitmapDescriptor(
             logicalSize: const Size(250, 250),
             imageSize: const Size(250, 250)
@@ -373,31 +374,41 @@ class _HomeScreenState extends State<HomeScreen> {
                                     const Align(alignment: FractionalOffset.centerLeft,child:  Row(children: [Icon(Icons.timelapse_rounded),
                                       Text("  8h30/ 19h30",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 10,color: Colors.black)),],),),
                                     const SizedBox(height: 3,),
-                                    Container(
-                                        width: 100,
-                                        height: 35,
-                                        decoration: BoxDecoration(
-                                          color: Colors.black,
-                                          borderRadius: BorderRadius.circular(25),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color: Colors.black.withOpacity(0.4),
-                                              blurRadius: 6,
-                                              offset: const Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child:  const Center(
-                                          child: Text(
-                                            'Menu',
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => const MenuInterface(),
                                           ),
-                                        )
+                                        );
+                                      },
+                                      child: Container(
+                                          width: 100,
+                                          height: 35,
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius: BorderRadius.circular(25),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.black.withOpacity(0.4),
+                                                blurRadius: 6,
+                                                offset: const Offset(0, 3),
+                                              ),
+                                            ],
+                                          ),
+                                          child:  const Center(
+                                            child: Text(
+                                              'Menu',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          )
 
+                                      ),
                                     )],
                                 ),
                               ),

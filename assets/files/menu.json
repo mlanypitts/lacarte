@@ -1,0 +1,286 @@
+[
+  {
+    "id": "1",
+    "name": "Chicken Tikka Masala",
+    "ingredients": "Chicken, Yogurt, Tomato Sauce, Garam Masala, Ginger, Garlic",
+    "price": "230",
+    "category": "main",
+    "image": "images/menu/chicken_tikka_masala.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Fish and Chips",
+    "ingredients": "Fish Fillets, Potatoes, Flour, Baking Powder, Lemon, Tartar Sauce",
+    "price": "500",
+    "category": "appetizer",
+    "image": "images/menu/fish_and_chips.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Margherita Pizza",
+    "ingredients": "Pizza Dough, Tomato Sauce, Mozzarella Cheese, Basil, Olive Oil",
+    "price": "350",
+    "category": "main",
+    "image": "images/menu/margherita_pizza.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Cheeseburger",
+    "ingredients": "Beef Patty, Cheese, Lettuce, Tomato, Onion, Pickles, Burger Bun",
+    "price": "200",
+    "category": "main",
+    "image": "images/menu/cheeseburger.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Caesar Salad",
+    "ingredients": "Romaine Lettuce, Croutons, Parmesan Cheese, Caesar Dressing",
+    "price": "180",
+    "category": "appetizer",
+    "image": "images/menu/caesar_salad.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Spaghetti Bolognese",
+    "ingredients": "Spaghetti, Ground Beef, Tomato Sauce, Onion, Garlic, Herbs",
+    "price": "280",
+    "category": "main",
+    "image": "images/menu/spaghetti_bolognese.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Ribeye Steak",
+    "ingredients": "Ribeye Steak, Salt, Pepper, Butter, Rosemary, Garlic",
+    "price": "450",
+    "category": "main",
+    "image": "images/menu/ribeye_steak.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Tomato Soup",
+    "ingredients": "Tomatoes, Onion, Garlic, Basil, Vegetable Broth, Cream",
+    "price": "150",
+    "category": "appetizer",
+    "image": "images/menu/tomato_soup.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Sushi Rolls",
+    "ingredients": "Sushi Rice, Nori, Fish or Vegetables, Soy Sauce, Wasabi, Pickled Ginger",
+    "price": "600",
+    "category": "appetizer",
+    "image": "images/menu/sushi_rolls.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Chicken Fried Rice",
+    "ingredients": "Chicken, Rice, Vegetables, Soy Sauce, Eggs, Garlic, Ginger",
+    "price": "250",
+    "category": "main",
+    "image": "images/menu/chicken_fried_rice.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Tacos al Pastor",
+    "ingredients": "Marinated Pork, Pineapple, Onion, Cilantro, Lime, Tortillas",
+    "price": "320",
+    "category": "main",
+    "image": "images/menu/tacos_al_pastor.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Guacamole",
+    "ingredients": "Avocado, Lime, Onion, Tomato, Cilantro, Jalapeno, Salt",
+    "price": "180",
+    "category": "appetizer",
+    "image": "images/menu/guacamole.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Club Sandwich",
+    "ingredients": "Turkey, Bacon, Lettuce, Tomato, Mayonnaise, Toasted Bread",
+    "price": "200",
+    "category": "main",
+    "image": "images/menu/club_sandwich.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Hot Dog",
+    "ingredients": "Sausage, Hot Dog Bun, Ketchup, Mustard, Onion, Relish",
+    "price": "150",
+    "category": "main",
+    "image": "images/menu/hot_dog.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Shrimp Scampi",
+    "ingredients": "Shrimp, Butter, Garlic, Lemon Juice, White Wine, Parsley",
+    "price": "400",
+    "category": "appetizer",
+    "image": "images/menu/shrimp_scampi.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Calamari Rings",
+    "ingredients": "Calamari, Flour, Salt, Pepper, Paprika, Garlic Powder",
+    "price": "380",
+    "category": "appetizer",
+    "image": "images/menu/calamari_rings.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Chicken Parmesan",
+    "ingredients": "Chicken Breast, Tomato Sauce, Mozzarella Cheese, Parmesan Cheese, Bread Crumbs",
+    "price": "350",
+    "category": "main",
+    "image": "images/menu/chicken_parmesan.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Pad Thai",
+    "ingredients": "Rice Noodles, Shrimp or Chicken, Tofu, Bean Sprouts, Peanuts, Lime",
+    "price": "280",
+    "category": "main",
+    "image": "images/menu/pad_thai.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Hummus",
+    "ingredients": "Chickpeas, Tahini, Lemon Juice, Garlic, Olive Oil, Cumin",
+    "price": "120",
+    "category": "appetizer",
+    "image": "images/menu/hummus.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Beef Stir-Fry",
+    "ingredients": "Beef, Broccoli, Bell Peppers, Soy Sauce, Ginger, Garlic, Sesame Oil",
+    "price": "320",
+    "category": "main",
+    "image": "images/menu/beef_stir_fry.jpg"
+  },
+  {
+    "id": "21",
+    "name": "Miso Soup",
+    "ingredients": "Miso Paste, Tofu, Wakame Seaweed, Green Onions, Dashi Broth",
+    "price": "120",
+    "category": "appetizer",
+    "image": "images/menu/miso_soup.jpg"
+  },
+  {
+    "id": "22",
+    "name": "Chicken Shawarma",
+    "ingredients": "Chicken, Pita Bread, Garlic Sauce, Pickles, Tomatoes, Lettuce",
+    "price": "280",
+    "category": "main",
+    "image": "images/menu/chicken_shawarma.jpg"
+  },
+  {
+    "id": "23",
+    "name": "Caprese Salad",
+    "ingredients": "Tomatoes, Mozzarella Cheese, Basil, Balsamic Glaze, Olive Oil",
+    "price": "190",
+    "category": "appetizer",
+    "image": "images/menu/caprese_salad.jpg"
+  },
+  {
+    "id": "24",
+    "name": "Beef Tacos",
+    "ingredients": "Beef, Tortillas, Salsa, Cheese, Lettuce, Sour Cream",
+    "price": "250",
+    "category": "main",
+    "image": "images/menu/beef_tacos.jpg"
+  },
+  {
+    "id": "25",
+    "name": "Fettuccine Alfredo",
+    "ingredients": "Fettuccine Pasta, Cream, Parmesan Cheese, Butter, Garlic",
+    "price": "290",
+    "category": "main",
+    "image": "images/menu/fettuccine_alfredo.jpg"
+  },
+  {
+    "id": "26",
+    "name": "Chicken Caesar Wrap",
+    "ingredients": "Chicken, Romaine Lettuce, Parmesan Cheese, Caesar Dressing, Tortilla",
+    "price": "210",
+    "category": "main",
+    "image": "images/menu/chicken_caesar_wrap.jpg"
+  },
+  {
+    "id": "27",
+    "name": "Samosas",
+    "ingredients": "Potatoes, Peas, Spices, Pastry Dough, Chutney",
+    "price": "160",
+    "category": "appetizer",
+    "image": "images/menu/samosas.jpg"
+  },
+  {
+    "id": "28",
+    "name": "Chicken Noodle Soup",
+    "ingredients": "Chicken, Egg Noodles, Carrots, Celery, Onion, Chicken Broth",
+    "price": "170",
+    "category": "appetizer",
+    "image": "images/menu/chicken_noodle_soup.jpg"
+  },
+  {
+    "id": "29",
+    "name": "Egg Fried Rice",
+    "ingredients": "Rice, Eggs, Vegetables, Soy Sauce, Green Onions",
+    "price": "180",
+    "category": "main",
+    "image": "images/menu/egg_fried_rice.jpg"
+  },
+  {
+    "id": "30",
+    "name": "Margarita Cocktail",
+    "ingredients": "Tequila, Lime Juice, Triple Sec, Salt, Ice",
+    "price": "180",
+    "category": "beverage",
+    "image": "images/menu/margarita_cocktail.jpg"
+  },
+  {
+    "id": "31",
+    "name": "Chocolate Lava Cake",
+    "ingredients": "Dark Chocolate, Butter, Eggs, Sugar, Flour, Vanilla",
+    "price": "350",
+    "category": "dessert",
+    "image": "images/menu/chocolate_lava_cake.jpg"
+  },
+
+  {
+    "id": "32",
+    "name": "Tiramisu",
+    "ingredients": "Ladyfingers, Mascarpone Cheese, Eggs, Sugar, Coffee, Cocoa Powder",
+    "price": "320",
+    "category": "dessert",
+    "image": "images/menu/tiramisu.jpg"
+  },
+
+  {
+    "id": "33",
+    "name": "Strawberry Cheesecake",
+    "ingredients": "Graham Cracker Crust, Cream Cheese, Sugar, Eggs, Vanilla, Strawberries",
+    "price": "380",
+    "category": "dessert",
+    "image": "images/menu/strawberry_cheesecake.jpg"
+  },
+
+  {
+    "id": "34",
+    "name": "Banana Split",
+    "ingredients": "Bananas, Ice Cream (Vanilla, Chocolate, Strawberry), Chocolate Sauce, Whipped Cream, Nuts, Cherry",
+    "price": "290",
+    "category": "dessert",
+    "image": "images/menu/banana_split.jpg"
+  },
+
+  {
+    "id": "35",
+    "name": "Apple Pie",
+    "ingredients": "Pie Crust, Apples, Sugar, Cinnamon, Butter, Lemon Juice",
+    "price": "300",
+    "category": "dessert",
+    "image": "images/menu/apple_pie.jpg"
+  }
+]
