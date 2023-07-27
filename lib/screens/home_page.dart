@@ -6,8 +6,8 @@ import 'dart:async';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:restaurant_assignment/Stores/map_store.dart';
 import 'package:widget_to_marker/widget_to_marker.dart';
-import '../widgets/currentLocation_widget.dart';
-import '../widgets/customMarker_widget.dart';
+import '../widgets/current_location_widget.dart';
+import '../widgets/custom_marker_widget.dart';
 import 'menu_page.dart';
 
 

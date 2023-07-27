@@ -10,15 +10,14 @@ void main() {
   GetIt getIt = GetIt.instance;
 
   getIt.registerSingletonAsync<MenuRepository>(() async {
-  final repo = MenuRepository();
-  return repo;
+    final repo = MenuRepository();
+    return repo;
   });
 
   getIt.registerSingletonAsync<MenuStore>(() async {
     final store = MenuStore();
     return store;
-  } ,dependsOn:[MenuRepository]);
-
+  }, dependsOn: [MenuRepository]);
 }
 
 class MyApp extends StatelessWidget {
@@ -31,13 +30,16 @@ class MyApp extends StatelessWidget {
       title: 'Restaurant App',
       locale: Locale('fr', 'FR'),
       translationsKeys: {
-        'fr_FR': {'title':"Bonjour !",
-                  'title_one': "Où voulez-vous manger \n aujourd'hui ?"},
-        'en_US': {'title': "Hello !",
-                  'title_one': "Where do you want to eat \n today ?"}
+        'fr_FR': {
+          'title': "Bonjour !",
+          'title_one': "Où voulez-vous manger \n aujourd'hui ?"
+        },
+        'en_US': {
+          'title': "Hello !",
+          'title_one': "Where do you want to eat \n today ?"
+        }
       },
       home: LoginScreen(),
     );
   }
 }
-
