@@ -11,9 +11,7 @@ class _OrderScreenState extends State<OrderScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Container(
-
-      ),
+      child: const Text("Order now"),
     );
   }
 }
