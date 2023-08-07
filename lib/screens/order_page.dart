@@ -12,6 +12,11 @@ class _OrderScreenState extends State<OrderScreen> {
   Widget build(BuildContext context) {
     return Container(
       child: const Text("Order now"),
+      width: 100,
+      height: 100,
+      child: Container(
+
+      ),
     );
   }
 }
